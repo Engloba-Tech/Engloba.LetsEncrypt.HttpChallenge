@@ -5,12 +5,12 @@ This middleware maps an endpoint in our asp.net application for resolving the Ht
 [Let's Encrypt Challenge Types](https://letsencrypt.org/es/docs/challenge-types/)
 
 
-##Install
+## Install
 
 `Install-Package Engloba.LetsEncrypt.HttpChallenge`
 
 
-##Usage
+## Usage
 
 
 ```
@@ -29,7 +29,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-##Settings
+## Settings
 
 This middleware is expecting that your appsettings to have this section.
 
