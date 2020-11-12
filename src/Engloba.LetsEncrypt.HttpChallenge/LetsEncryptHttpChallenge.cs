@@ -13,8 +13,8 @@ namespace Engloba.LetsEncrypt.HttpChallenge
             var configuration = context.RequestServices.GetService(typeof(IConfiguration)) as IConfiguration;
             var settings = configuration.GetSection("LetsEncrypt").Get<LetsEncryptSettings>();
 
-            if (context.Request.Path == $"/.well-known/acme-challenge/{settings.HttpChallengeEndpoint}")
-                await context.Response.WriteAsync(settings.HttpChallengeKey);
+            if (context.Request.Path == $"/.well-known/acme-challenge/{settings?.HttpChallengeEndpoint}")
+                await context.Response.WriteAsync(settings?.HttpChallengeKey);
             else
                 await next(context);
         }
