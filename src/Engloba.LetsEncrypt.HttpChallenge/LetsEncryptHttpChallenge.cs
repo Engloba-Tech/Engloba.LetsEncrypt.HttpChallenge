@@ -15,6 +15,8 @@ namespace Engloba.LetsEncrypt.HttpChallenge
 
             if (context.Request.Path == $"/.well-known/acme-challenge/{settings.HttpChallengeEndpoint}")
                 await context.Response.WriteAsync(settings.HttpChallengeKey);
+            else
+                await next(context);
         }
     }
 
