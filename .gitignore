@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/Engloba.LetsEncrypt.HttpChallenge/v16
+/src/Engloba.LetsEncrypt.HttpChallenge/.vs/Engloba.LetsEncrypt.HttpChallenge/v16
+/src/Engloba.LetsEncrypt.HttpChallenge/bin/Debug/netcoreapp3.1
+/src/Engloba.LetsEncrypt.HttpChallenge/obj
