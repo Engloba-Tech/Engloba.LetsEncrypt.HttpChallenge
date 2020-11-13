@@ -31,7 +31,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 ## Settings
 
-This middleware is expecting that your appsettings to have this section.
+This middleware is expecting your appsettings to have this section.
 
 
 ```
